@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#f4f1ea" />
+  <!-- 蜡烛 -->
+  <rect x="26" y="26" width="12" height="26" rx="3" fill="#c2452f" />
+  <rect x="26" y="26" width="12" height="6" rx="3" fill="#d9694f" />
+  <!-- 灯芯 -->
+  <rect x="31" y="21" width="2" height="5" rx="1" fill="#6f6960" />
+  <!-- 火焰 -->
+  <path
+    d="M32 6c4 6 6 9 6 12a6 6 0 1 1-12 0c0-3 2-6 6-12z"
+    fill="#ffb93b"
+  />
+  <path d="M32 12c2 3 3 4.6 3 6.2a3 3 0 1 1-6 0c0-1.6 1-3.2 3-6.2z" fill="#fff3c4" />
+</svg>

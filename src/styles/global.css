@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    background-color: #f4f1ea;
+    color: #191817;
+    overscroll-behavior: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  ::selection {
+    background: rgba(194, 69, 47, 0.18);
+  }
+}
+
+@layer utilities {
+  /* 隐藏滚动条但保留滚动能力（画廊内滚动用） */
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .vertical-text {
+    writing-mode: vertical-rl;
+  }
+
+  /* 文字描边，用于大标题的克制装饰 */
+  .text-outline {
+    -webkit-text-stroke: 1px rgba(25, 24, 23, 0.25);
+    color: transparent;
+  }
+}
+
+/* 全站纸张颗粒感 —— 呼应参考站点的噪声质感，但要极克制 */
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* 灯焰的柔光 */
+.candle-glow {
+  filter: drop-shadow(0 0 6px rgba(255, 176, 59, 0.85))
+    drop-shadow(0 0 18px rgba(255, 140, 20, 0.45));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
