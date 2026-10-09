@@ -1,15 +1,44 @@
-# 尺K · 生日快乐
+<div align="center">
+  <img src=".github/assets/icon.png" width="108" alt="chike-birthday" />
+  <h1>尺K · 生日快乐</h1>
+  <p><b>一份写给好兄弟尺K的二十岁生日礼物</b><br /><sub>用照片搭的一个小网站</sub></p>
+  <p>
+    <a href="https://sunfleeting-debug.github.io/chike-birthday/"><img src="https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF-chike--birthday-993556" alt="在线地址"></a>
+    <img src="https://img.shields.io/badge/Vite-5-646CFF" alt="Vite">
+    <img src="https://img.shields.io/badge/React-18-61DAFB" alt="React 18">
+    <img src="https://img.shields.io/badge/TailwindCSS-3-38B2AC" alt="TailwindCSS">
+    <img src="https://img.shields.io/badge/Framer%20Motion-%E5%8A%A8%E6%95%88-E64CE5" alt="Framer Motion">
+    <img src="https://img.shields.io/badge/%E5%BD%A2%E6%80%81-%E7%BA%AF%E9%9D%99%E6%80%81-2C2C2A" alt="纯静态">
+  </p>
+  <p>
+    <b>简体中文</b> ·
+    <a href="README.en.md">English</a>
+  </p>
+</div>
 
-一份写给好兄弟 **尺K** 的二十岁生日礼物。用照片搭的一个小网站。
-
-**线上地址 → https://sunfleeting-debug.github.io/chike-birthday/**
+**线上地址 → <https://sunfleeting-debug.github.io/chike-birthday/>**
 
 - 全屏纵向翻页，鼠标划过会有照片拖尾
 - 四屏：封面 → 关于 → 时刻 → 生日
-- 「时刻」里可以进去看全部 21 张照片，按 *江边 / 高处 / 我们* 分组
+- 「时刻」里可以进去看全部 **21 张**照片，按 *江边 / 高处 / 我们* 分组
 - 「生日」那屏有一个可以点亮的生日蛋糕，吹灭之后会下彩带、跳出许愿
 
-技术栈：Vite + React 18 + TailwindCSS + Framer Motion（纯静态站点，无后端）。
+技术栈：Vite + React 18 + TailwindCSS + Framer Motion（**纯静态站点，无后端**）。
+
+## 📸 界面
+
+<div align="center">
+<table>
+  <tr>
+    <td width="50%" align="center"><img src=".github/assets/screenshots/01-cover.png" alt="封面"><br><sub>封面</sub></td>
+    <td width="50%" align="center"><img src=".github/assets/screenshots/03-moments.png" alt="时刻"><br><sub>时刻 —— 21 张照片</sub></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><img src=".github/assets/screenshots/04-birthday.png" alt="生日"><br><sub>生日 —— 可点亮的蛋糕</sub></td>
+    <td width="50%" align="center"><img src=".github/assets/screenshots/05-mobile.png" alt="移动端"><br><sub>移动端</sub></td>
+  </tr>
+</table>
+</div>
 
 ---
 
@@ -56,8 +85,7 @@ python scripts/process_photos.py
 npm run deploy
 ```
 
-`scripts/deploy.sh` 会自动：从 git remote 读出仓库名 → 按 `/<仓库名>/` 作为
-base 构建 → 把 `dist/` 推成 `gh-pages` 分支。约 1 分钟后生效。
+`scripts/deploy.sh` 会自动：从 git remote 读出仓库名 → 按 `/<仓库名>/` 作为 base 构建 → 把 `dist/` 推成 `gh-pages` 分支。约 1 分钟后生效。
 
 ### 当前线上是怎么部署的
 
@@ -136,5 +164,9 @@ chike-birthday/
 ```
 
 ---
+
+## 📄 许可
+
+本仓库**暂未附带开源许可协议** —— 这是私人礼物项目，照片与文案请勿转载。
 
 生日快乐，尺K。🎂
